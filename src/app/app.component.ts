@@ -15,4 +15,9 @@ export class AppComponent  {
 
   clock = Observable.interval(1000);
 
+  constructor(){
+    this.clock.subscribe(console.log.bind(console));
+    // Now we're logging out to the console each second cuz async in the template is simply doing a subscribe on this Observable (the clock)
+  }
+
 }

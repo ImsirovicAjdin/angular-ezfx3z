@@ -9,8 +9,13 @@ import 'rxjs/add/observable/interval';
   //templateUrl: './app.component.html',
   //styleUrls: [ './app.component.css' ]
   template: `
-    <h1>{{message}}</h1>
-  `
+    <h1>{{clock}}</h1> 
+  ` // now we start using our observable, our clock
+  // but we just get an [object Object] in the app
+  /* 
+  Explanation: The Object we got back is an Observable, and an Observable pushes out values asynchronously,
+  so we have a pipe, called async, which can hadle that 
+  */
 })
 export class AppComponent  {
   //name = 'Hello, world';

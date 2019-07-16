@@ -9,7 +9,7 @@ import 'rxjs/add/observable/interval';
   //templateUrl: './app.component.html',
   //styleUrls: [ './app.component.css' ]
   template: `
-    <h1>{{clock}}</h1> 
+    <h1>{{clock | async}}</h1> 
   ` // now we start using our observable, our clock
   // but we just get an [object Object] in the app
   /* 

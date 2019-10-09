@@ -1,4 +1,4 @@
-// Render an Observable with the Async Pipe
+// 001 Render an Observable with the Async Pipe
 
 import { Component } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
